@@ -1,0 +1,44 @@
+\documentclass[12pt, aJ4]{jsarticle}
+
+\usepackage{ascmac}
+\usepackage{amsmath}
+\usepackage{additional}
+
+\begin{document}
+
+\title{ゼミテンプレ}
+\author{稲毛惇人}
+\maketitle
+
+\section{はじめに}
+コメントアウトはCommand+\{，解除はCommand+\}．
+
+\section{手法}
+\begin{myframe}{パラメータ}
+	\begin{tabular}{ll}
+		$c$ & ：状態数 \\
+		$m$ & ：出力記号の数 \\
+		$s_{t} \in \{\omega_{1}, \omega_{2},..., \omega_{c}\}$ & ：時点$t$での状態 \\
+		$x_{t} \in \{v_{1}, v_{2},..., v_{m}\}$ & ：時点$t$での観測結果(出力記号) \\
+		$\mathbf{s} = s_{1}s_{2}\cdots s_{t} \cdots s_{n}$ & ：状態系列 \\
+		$\mathbf{x} = x_{1}x_{2}\cdots x_{t} \cdots x_{n}$ & ：観測記号系列 \\
+		$a_{ij}，a(\omega_{i}, \omega_{j})$ & ：状態$\omega_{i}$から状態$\omega_{j}$への遷移確率 \\
+		$b_{jk}，b(\omega_{j}, v_{k})$ & ：状態$\omega_{j}$で$v_{k}$を出力する確率 \\
+		$\pi_{i}$ & ：初期状態($t=1$)が$\omega_{i}$である確率 \\
+		$\bm{A}$ & ：$a_{ij}$を($i,j$)成分としてもつ$c \times c$の行列 \\
+		$\bm{B}$ & ：$b_{jk}$を($j,k$)成分としてもつ$c \times m$の行列 \\
+		$\bm{\pi}=(\pi_{1}, \pi_{2}, ..., \pi_{c})$ & ：$\pi_{i}$を成分としてもつ$c$次元のベクトル
+	\end{tabular}
+\end{myframe}
+
+% 参考文献
+\begin{thebibliography}{9}
+	\renewcommand{\baselinestretch}{1.0}
+	\small
+	\bibitem{lit:Tmp}
+		著者名, 
+		``作品名'', 
+		出版会社, 20XX.
+\end{thebibliography}
+		
+\end{document}
